@@ -12,7 +12,7 @@ const tone: Record<string, string> = {
 };
 
 export function Chip({ entity }: { entity: EntityRef }) {
-  const cls = `rounded-md px-1.5 py-0.5 text-[10px] font-medium ring-1 ${tone[entity.kind] ?? tone.tag}`;
+  const cls = `rounded-md px-1.5 py-0.5 text-[10px] font-medium ring-1 ${tone[entity.kind] ?? tone["tag"]}`;
 
   if (entity.to === "person") {
     return (
