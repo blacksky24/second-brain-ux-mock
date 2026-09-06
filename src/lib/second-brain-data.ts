@@ -5,7 +5,7 @@ export type EntityRef = {
   label: string;
   kind: EntityKind;
   /** route target, optional */
-  to?: "person" | "project";
+  to?: "person" | "project" | undefined;
 };
 
 export type TimelineEvent = {
